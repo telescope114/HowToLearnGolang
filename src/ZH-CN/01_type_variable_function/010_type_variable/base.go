@@ -57,7 +57,9 @@ func main() {
 
 	// 空值 nil
 	// 一般无法直接赋值给基础类型
-	var p *int = nil
+	var p *int = nil // 这个*int代表指针变量
+	var p1 int = 33
+	p = &p1
 	fmt.Println(p)
 	fmt.Println(reflect.TypeOf(p)) // 类型还是初始声明的类型
 	//#endregion
