@@ -1,17 +1,32 @@
+/**
+ 复杂类型如下：
+ * 指针
+ * 数组
+ * 结构体
+ * 函数
+ * 管道
+ * 切片
+ * 接口
+ * map
+ */
+
 package main
 
 import "fmt"
 
-// Person 类型声明
-type Person struct {
-	name string
-	age  int
-}
 
 func main() {
+	// Person 结构体类型声明
+	type Person struct {
+		name string
+		age  int
+	}
 	// 创建一个 Person 类型的变量
+	var P  = nil
 	p := Person{name: "Alice", age: 20}
+	P = &P
 	fmt.Println(p) // 输出 "{Alice 20}"
+	fmt.Println(P)
 
 	// 创建一个切片类型的变量
 	s := []int{1, 2, 3}

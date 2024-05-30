@@ -5,6 +5,13 @@ import (
 	"reflect"
 )
 
+/**
+ golang的基本类型分为四部分：
+ * 布尔型
+ * 数值型（整数类型、浮点类型）
+ * 字符/字符串
+ */
+
 func main() {
 	//#region
 
