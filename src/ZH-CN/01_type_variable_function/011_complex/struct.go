@@ -10,4 +10,5 @@ func main () {
 	}
 	person  := Person{name: "Alice", age: 20}
 	fmt.Println(person)
+	fmt.Println(person.name)
 }
