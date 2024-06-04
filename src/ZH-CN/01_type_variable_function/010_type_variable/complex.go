@@ -22,9 +22,9 @@ func main() {
 		age  int
 	}
 	// 创建一个 Person 类型的变量
-	var P  = nil
+	var P *Person = nil
 	p := Person{name: "Alice", age: 20}
-	P = &P
+	P = &p
 	fmt.Println(p) // 输出 "{Alice 20}"
 	fmt.Println(P)
 
