@@ -18,6 +18,7 @@ func main () {
 		{ name: "田七", age: 24 },
 	};
 	
+	// 可以用 range 来获取 数组/切片 的序数和值
 	for i,v := range persons {
 		fmt.Printf("第%d个人是%s，年龄%d。\n", i, v.name, v.age);
 	}
