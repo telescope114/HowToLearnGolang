@@ -1,3 +1,13 @@
+// go:build 002
+package main
+
+import "fmt"
+
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -5,7 +15,7 @@
  *     Next *ListNode
  * }
  */
- func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	var carry int
 	var head, tail *ListNode
 
@@ -35,4 +45,8 @@
 	}
 
 	return head
+}
+
+func main() {
+	fmt.Println(addTwoNumbers(nil, nil))
 }
